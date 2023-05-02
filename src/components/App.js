@@ -7,8 +7,8 @@ const App = () => {
 
   return (
     <div>
-      <Character/>
-      <ProfilePicture/>
+      <Character />
+      <ProfilePicture />
     </div>
   )
 }
