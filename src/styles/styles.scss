@@ -1,0 +1,17 @@
+@use 'reset';
+@use 'ProfilePicture';
+
+@font-face {
+  font-family: 'warcraft';
+  src: local('warcraft'), url(../fonts/LifeCraft_Font.ttf) format('truetype');
+}
+
+#root {
+  display: flex;
+  background-image: url(../images/TavernBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
