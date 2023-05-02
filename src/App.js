@@ -11,7 +11,7 @@ const App = () => {
   useEffect (() =>{
   axios
     // request from Profile APIs --> Character Media API --> Character Media Summary  
-    .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/character-media?namespace=profile-eu&locale=fr_FR&access_token=EU6fwhiW2HklpTVG89ipSmpDnHjwWDyAyp')
+    .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/character-media?namespace=profile-eu&locale=fr_FR&access_token=EUZYb7BaKFW8Z2xtnEZKiAwxiw7ZJtPsEj')
     .then((response) => {
       console.log(response);
       setProfileName(response.data.character.name);
