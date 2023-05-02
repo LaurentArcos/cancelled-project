@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'warcraft';
+  src: local('warcraft'), url(./fonts/LifeCraft_Font.ttf) format('truetype');
+}
+
 .background {
   height: 100vh;
   width: auto;
@@ -6,4 +11,5 @@
 .name {
   color: white;
   font-size: 3rem;
+  font-family: "warcraft";
 }
