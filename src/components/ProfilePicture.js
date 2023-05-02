@@ -3,7 +3,6 @@ import {React, useState, useEffect} from 'react'
 
 const ProfilePicture = () => {
 
-  const [profileName, setProfileName ] =useState([]);
   const [profilePicture, setProfilePicture] =useState([]);
 
 
@@ -12,7 +11,6 @@ const ProfilePicture = () => {
     // request from Profile APIs --> Character Media API --> Character Media Summary  
     .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/character-media?namespace=profile-eu&locale=fr_FR&access_token=EUZYb7BaKFW8Z2xtnEZKiAwxiw7ZJtPsEj')
     .then((response) => {
-      setProfileName(response.data.character.name);
       setProfilePicture(response.data.assets[3].value)
     })
     .catch((error) => {
@@ -30,7 +28,6 @@ const ProfilePicture = () => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
         }}>
-      <div className='name'>{profileName}</div>
     </div>
   )
 }
