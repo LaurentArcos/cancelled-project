@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div 
-      className='background' 
+      className='profilePicture' 
       style={{ 
         backgroundImage: `url(${profilePicture})`,
         backgroundPosition: 'center',
