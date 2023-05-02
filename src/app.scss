@@ -3,13 +3,19 @@
   src: local('warcraft'), url(./fonts/LifeCraft_Font.ttf) format('truetype');
 }
 
+#root {
+  display: flex;
+}
 .background {
-  height: 100vh;
-  width: auto;
+  height: 80vh;
+  width: 80vw;
 }
 
 .name {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
+  color: gold;
   font-family: "warcraft";
+  text-align: center;
+  padding-top: 2rem;
 }

@@ -15,7 +15,7 @@ const App = () => {
     .then((response) => {
       console.log(response);
       setProfileName(response.data.character.name);
-      setProfilePicture(response.data.assets[2].value)
+      setProfilePicture(response.data.assets[3].value)
     })
     .catch((error) => {
       console.error(error);
@@ -24,7 +24,14 @@ const App = () => {
 
 
   return (
-    <div className='background' style={{ backgroundImage: `url(${profilePicture})` }}>
+    <div 
+      className='background' 
+      style={{ 
+        backgroundImage: `url(${profilePicture})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+        }}>
       <div className='name'>{profileName}</div>
     </div>
   )
