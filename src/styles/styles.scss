@@ -1,10 +1,16 @@
 @use 'reset';
 @use 'ProfilePicture';
 @use 'Character';
+@use 'Header';
 
 @font-face {
-  font-family: 'warcraft';
-  src: local('warcraft'), url(../fonts/LifeCraft_Font.ttf) format('truetype');
+  font-family: 'warcraft1';
+  src: local('warcraft1'), url(../fonts/LifeCraft_Font.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'warcraft2';
+  src: local('warcraft2'), url(../fonts/Warcraft.ttf) format('truetype');
 }
 
 #root {

@@ -25,8 +25,7 @@ const Character = () => {
   return (
     <div className='character'>
       <div className='name'>{profileName}</div>
-      <div className='race'>{race}</div>
-      <div className='class'>{characterClass}</div>
+      <div className='raceAndClass'>{race} / {characterClass}</div>
     </div>
   )
 }
