@@ -9,8 +9,8 @@ const Character = () => {
 
   useEffect (() =>{
   axios
-    // request from Profile APIs --> Character Appearance API --> Character Appearance Summary  
-    .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/appearance?namespace=profile-eu&locale=fr_FR&access_token=EUZYb7BaKFW8Z2xtnEZKiAwxiw7ZJtPsEj')
+    //* request from Profile APIs --> Character Appearance API --> Character Appearance Summary  
+    .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/appearance?namespace=profile-eu&locale=fr_FR&access_token=EU0nviCMjfCNanSqMWKltbKxQXjH8p74vW')
     .then((response) => {
       setProfileName(response.data.character.name);
       setRace(response.data.playable_race.name);

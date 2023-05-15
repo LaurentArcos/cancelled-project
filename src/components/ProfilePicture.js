@@ -8,10 +8,11 @@ const ProfilePicture = () => {
 
   useEffect (() =>{
   axios
-    // request from Profile APIs --> Character Media API --> Character Media Summary  
-    .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/character-media?namespace=profile-eu&locale=fr_FR&access_token=EUZYb7BaKFW8Z2xtnEZKiAwxiw7ZJtPsEj')
+    //* request from Profile APIs --> Character Media API --> Character Media Summary  
+    .get('https://eu.api.blizzard.com/profile/wow/character/uldaman/thryndil/character-media?namespace=profile-eu&locale=fr_FR&access_token=EU0nviCMjfCNanSqMWKltbKxQXjH8p74vW')
     .then((response) => {
-      setProfilePicture(response.data.assets[3].value)
+      setProfilePicture(response.data.assets[2].value)
+      console.log(response);
     })
     .catch((error) => {
       console.error(error);
